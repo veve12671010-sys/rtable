@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RusTab — таблицы</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+<header>
+  <div class="brand">▦ RusTab</div>
+  <button id="newBtn">Новая</button>
+  <button id="openBtn">Открыть Excel/CSV</button>
+  <button id="saveBtn" class="primary">Скачать .xlsx</button>
+  <button id="csvBtn">Скачать CSV</button>
+  <input id="fileInput" type="file" accept=".xlsx,.xls,.xlsm,.csv" hidden>
+  <span class="grow"></span><span class="tag">Веб-версия · MVP</span>
+</header>
+<nav class="toolbar">
+  <button id="boldBtn"><b>Ж</b></button>
+  <label>Цвет <input type="color" id="colorPick" value="#fff2cc"></label>
+  <button id="fillBtn">Заливка ячеек</button>
+  <button id="sumBtn">Σ СУММ</button>
+  <button id="avgBtn">СРЗНАЧ</button>
+  <button id="minBtn">МИН</button>
+  <button id="maxBtn">МАКС</button>
+  <span class="hint">Формулы: =A1+B1, =СУММ(A1:A8), =СРЗНАЧ(A1:A8)</span>
+</nav>
+<section class="formula">
+  <div id="cellName">A1</div><span class="fx">fx</span>
+  <input id="formulaInput" aria-label="Значение или формула" placeholder="Введите значение или формулу">
+  <button id="applyBtn">Применить</button>
+</section>
+<main><div id="gridWrap"><table id="grid"></table></div></main>
+<footer><div id="status">Готово</div><div id="sheetTabs"><button class="active">Лист1</button><button id="addSheet">＋ Лист</button></div></footer>
+<script src="app.js"></script>
+</body>
+</html>

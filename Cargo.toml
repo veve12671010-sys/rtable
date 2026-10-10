@@ -1,0 +1,12 @@
+[package]
+name = "rustab"
+version = "0.1.0"
+edition = "2021"
+description = "Русская электронная таблица на Rust"
+
+[dependencies]
+eframe = "0.29"
+egui = "0.29"
+calamine = "0.26"
+rust_xlsxwriter = "0.79"
+rfd = "0.15"

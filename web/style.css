@@ -1,0 +1,19 @@
+:root{font-family:Inter,"Segoe UI",Arial,sans-serif;color:#202124;background:#f6f8fa}
+*{box-sizing:border-box}body{margin:0;height:100vh;display:flex;flex-direction:column}
+header,.toolbar,.formula,footer{display:flex;align-items:center;gap:8px;padding:9px 14px;background:#fff;border-bottom:1px solid #d8dee4}
+.brand{font-size:20px;font-weight:750;color:#16734b;margin-right:12px}
+button{border:1px solid #d0d7de;background:#fff;border-radius:6px;padding:7px 11px;cursor:pointer;color:#24292f}
+button:hover{background:#f3f6f8}button.primary{background:#16734b;color:white;border-color:#16734b}
+.grow{flex:1}.tag{font-size:12px;color:#57606a}.toolbar{flex-wrap:wrap;background:#f8fafb}
+.toolbar label{font-size:13px;display:flex;align-items:center;gap:5px}.toolbar input{width:30px;height:25px;border:0;padding:0}
+.hint{font-size:12px;color:#6e7781;margin-left:auto}.formula{gap:10px}
+#cellName{min-width:55px;text-align:center;font-weight:700;border:1px solid #d0d7de;padding:6px;border-radius:4px}
+.fx{font-style:italic;color:#6e7781;font-weight:bold}#formulaInput{flex:1;min-width:100px;padding:8px;border:1px solid #d0d7de;border-radius:5px;font:inherit}
+main{flex:1;min-height:0;padding:10px}#gridWrap{height:100%;overflow:auto;background:white;border:1px solid #d8dee4;border-radius:5px}
+table{border-collapse:separate;border-spacing:0;table-layout:fixed}th,td{min-width:120px;width:120px;height:29px;border-right:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;padding:3px 7px;white-space:nowrap;overflow:hidden}
+th{position:sticky;top:0;background:#f3f5f7;z-index:2;font-weight:600;text-align:center}th.rowhead{left:0;z-index:3;width:48px;min-width:48px}
+td.rownum{position:sticky;left:0;background:#f3f5f7;text-align:center;min-width:48px;width:48px;z-index:1;color:#57606a}
+td.cell{outline:none;background:white}td.cell.selected{box-shadow:inset 0 0 0 2px #16834f;background:#f3fff8}td.cell.bold{font-weight:bold}
+footer{justify-content:space-between;border-top:1px solid #d8dee4;border-bottom:0;font-size:12px;color:#57606a}
+#sheetTabs{display:flex;gap:5px}#sheetTabs button{font-size:12px;padding:5px 10px}#sheetTabs button.active{border-bottom:2px solid #16734b;color:#16734b}
+@media(max-width:700px){.hint,.tag{display:none}header{flex-wrap:wrap}.brand{width:100%}th,td{min-width:95px;width:95px}}
